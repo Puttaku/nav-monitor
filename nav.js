@@ -35,7 +35,12 @@ const fetchData = () => {
 }
 
 const getNav = data => {
-    console.log(data[process.argv[2]].Nav)
+    if(data[process.argv[2]].Nav){
+        console.log(data[process.argv[2]].Nav)
+    }
+    else{
+        console.log("Not found!!!")
+    }
 }
 
 fetchData()
