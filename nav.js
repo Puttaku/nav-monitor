@@ -35,7 +35,7 @@ const fetchData = () => {
 }
 
 const getNav = data => {
-    if(data[process.argv[2]].Nav){
+    if(data[process.argv[2]]){
         console.log(data[process.argv[2]].Nav)
     }
     else{
